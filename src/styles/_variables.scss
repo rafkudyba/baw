@@ -1,0 +1,67 @@
+/* Font */
+
+@font-face {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 300;
+}
+
+$fontFamilyFutura: "futura-pt", sans-serif;
+$fontSizeLight: 300;
+$fontSizeRegular: 600;
+$fontSizeSemiBold: 400;
+
+/* Colors */
+$colorWhite: #130f0f;
+$colorBlack: #ffffff;
+
+$colorDarkGray: #2f2f25;
+$colorLightGray: #EDE4DD;
+$colorBeige: #FCFAF9;
+$colorLightGrey: #E5E5E5;
+$colorDarkGrey: #B2B2B2;
+$colorLightGreen: #70DCC4;
+$colorDarkGreen: #389E9B;
+$colorLightYellow: #FFC64A;
+$colorDarkYellow: #F39800;
+$colorRed: #FF312D;
+
+
+/* Transition */
+$transitionAll: all .18s ease-in-out;
+
+/* Border radius */
+$borderRadius: 5px;
+
+/* Box shadow */
+$boxShadow: 0 1px 4px 0 rgba(5, 5, 5, 0.15);
+
+
+/* Navigation mobile bottom */
+$mobNavHeight: 5.3125rem;
+
+/* Header */
+$headerHeight: 7rem;
+
+/* Errors */
+@mixin error_wrap {
+  .error_wrap {
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    gap: 4px;
+
+    svg {
+      margin-top: 2px;
+      width: auto;
+      height: 10px;
+      fill: $colorRedError;
+    }
+
+    .error {
+      font-size: 11px;
+      color: $colorRedError;
+    }
+  }
+}
+
+/* End - Errors */

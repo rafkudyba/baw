@@ -1,0 +1,119 @@
+@import "src/styles/variables";
+
+.wr {
+  width: 100%;
+  height: auto;
+  background-color: $colorBlack;
+
+  .productSection {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: {
+      // right: 2px solid #818181;
+      // left: 2px solid #818181;
+      bottom: 2px solid #818181;
+    }
+    
+    .section {
+      width: 100%;
+      max-height: 660px;
+      overflow: hidden;
+    }
+
+    .productSectionButton {
+      position: absolute;
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      vertical-align: bottom;
+      bottom: 0;
+      color: $colorBlack;
+      font-weight: bold;
+
+      cursor: pointer;
+      padding-top: 20px;
+      background: linear-gradient(transparent, $colorWhite);
+      //box-shadow: 0px -50px 49px 39px rgb(112, 112, 112);
+      &:hover {
+        color: #624700;
+      }}
+  }
+
+  .bioSection {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px 20px 20px;
+    border: {
+      bottom: 2px solid #818181;
+    }
+    text-align: center;
+    color: $colorWhite;
+
+  }
+
+  .imgWrapper {
+    position: relative;
+    height: calc(100vh - 90px);
+    width: 100%;
+    background-image: url('../../../../public/band_logo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    background-position: center;
+    background-color: $colorBlack;
+    // border: {
+    //   bottom: 2px solid #818181;
+    // }
+    //background-size:;
+
+
+    .socialMediaBar {
+      position: absolute;
+      top: 30px;
+      display: flex;
+      justify-content: center;
+      background: transparent;
+      height: 50px;
+      width: 100%;
+      padding: 0 20px;
+
+      .mediaIcon {
+        height: 100%;
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        svg {
+          fill: $colorBlack;
+          cursor: pointer;
+          font-size: 80px;
+
+          &:hover {
+            fill: $colorWhite;
+          }
+
+          @media (max-width: 600px) {
+            font-size: 16vw;
+          }
+        }
+
+      }
+
+
+    }
+
+    //.bandImage {
+    //  z-index: 3;
+    //  height: 30px;
+    //  filter: blur(2px);
+    //}
+  }
+
+}
